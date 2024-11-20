@@ -35,7 +35,7 @@ const CustomSelect = ({ options, onSelect }: CustomSelectProps) => {
   };
 
   return (
-    <div className="relative w-72" ref={dropdownRef}>
+    <div className="relative w-52 md:w-72" ref={dropdownRef}>
       {/* Selected item */}
       <div
         className="bg-indigo-600  text-white p-3 rounded cursor-pointer flex justify-between items-center"

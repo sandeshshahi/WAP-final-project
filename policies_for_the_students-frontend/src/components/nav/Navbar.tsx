@@ -28,17 +28,17 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="bg-indigo-500 text-white py-3 flex justify-between items-center shadow-md px-16 h-16">
+    <nav className="bg-indigo-500 text-white py-3 flex justify-between items-center shadow-md px-2 md:px-16 md:h-16 ">
       {/* Navbar Title */}
       <Link to="/">
-        <div className="text-4xl font-bold flex font-serif">
+        <div className="text-base md:text-4xl font-bold flex font-serif">
           <p className="font-mono">Policies</p>&nbsp;for the&nbsp;
           <p className="font-mono">Students</p>
         </div>
       </Link>
 
       {/* Buttons/Avatar Section */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-2 md:space-x-4">
         {!isAuthenticated ? (
           <>
             {/* Login and Signup Buttons */}

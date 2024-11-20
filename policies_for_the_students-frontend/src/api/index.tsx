@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 import { AuthResponse, Policy, User } from '../types';
 
-const api = axios.create({ baseURL: 'http://localhost:8000' });
+const api = axios.create({ baseURL: import.meta.env.VITE_BASE_URL });
 
 api.interceptors.request.use((config: any) => {
   const accessToken = localStorage.getItem('accessToken');

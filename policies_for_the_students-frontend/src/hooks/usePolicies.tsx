@@ -4,7 +4,6 @@ import { Policy } from '../types';
 
 function usePolicies() {
   const currentYear = new Date().getFullYear();
-  const previousYear = currentYear - 1;
 
   const [policies, setPolicies] = useState<Policy[]>([]);
   const [from, setFrom] = useState<string>(currentYear.toString());
